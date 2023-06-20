@@ -1,0 +1,115 @@
+@charset 'utf-8'
+
+/* common section */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: .9rem;
+  color: #333;
+  font-family: 'Crimson Text', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+h2{
+  font-size: 1.2rem;
+}
+h3{
+  font-size: 1.1rem;
+}
+p {
+  font-size: 1.1rem;
+}
+
+li {
+  /* list-style: inside; */
+}
+
+#mainvisual{
+  max-width: 90vw;
+  margin: 3% auto;
+}
+
+.main{
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+.header{
+  display: flex;
+  max-width: 90vw;
+  margin: 3% auto;
+}
+
+.header img{
+  height: 18px;
+}
+
+.header .logo h1{
+  font-size: 0px;
+}
+
+.header .nav{
+  display: flex;
+}
+
+.nav li{
+  display: block;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+}
+
+._rev{
+  flex-direction: row-reverse;
+}
+
+.pic,
+.textbox{
+  width: 50vw;
+}
+
+.textbox{
+  padding: 0 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width:767px){
+  #mainvisual{
+    margin: 0 auto;
+    max-width: 100vw;
+  }
+  .header{
+    max-width: 100vw;
+    padding: 0 1.5rem;
+  }
+  .flex{
+    display: block;
+  } 
+  .pic,
+  .textbox{
+    width: 90vw;
+  }
+  .textbox{
+    padding: 0;
+  }
+}
